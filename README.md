@@ -3,9 +3,14 @@
 # ansible-operator-nginx-simple
 operator-sdkによるansible operatorのサンプル実装。できるだけシンプルに。
 
-# 作成・動作環境  
-- OpenShift/oc 4.4.17
-- operator-sdk 0.19.4
+# 作成・動作・テスト環境  
+- 作成・動作
+  - OpenShift/oc 4.4.17
+  - operator-sdk 0.19.4
+- テスト
+  - GitHub Actions with Molecule
+    - Kubernetes 1.16
+    - Kubernetes 1.17
 
 # よさげなドキュメント
 https://v0-19-x.sdk.operatorframework.io/docs/  
