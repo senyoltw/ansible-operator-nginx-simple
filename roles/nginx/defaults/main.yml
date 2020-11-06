@@ -1,3 +1,4 @@
 ---
 # defaults file for nginx
 size: 1
+image_version: "latest"

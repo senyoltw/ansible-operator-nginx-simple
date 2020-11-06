@@ -6,7 +6,7 @@
       kind: Deployment
       apiVersion: apps/v1
       metadata:
-        name: '{{ meta.name }}-nginx'
+        name: '{{ meta.name }}-nginx-{{image_version}}'
         namespace: '{{ meta.namespace }}'
       spec:
         replicas: "{{size}}"
@@ -20,6 +20,7 @@
           spec:
             containers:
             - name: nginx
-              image: "nginxinc/nginx-unprivileged:latest"
+              image: "nginxinc/nginx-unprivileged:{{image_version}}"
               ports:
                 - containerPort: 8080
+
