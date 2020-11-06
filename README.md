@@ -41,6 +41,7 @@ ansible-operator-nginx-simple-859dc55dd8-hq244   1/1     Running   0          80
 example-nginx-nginx-1.19.2-6686d8f89f-595km      1/1     Running   0          20s
 example-nginx-nginx-1.19.2-6686d8f89f-9rd8k      1/1     Running   0          20s
 example-nginx-nginx-1.19.2-6686d8f89f-wtwbz      1/1     Running   0          20s
+
 $ oc delete Nginx example-nginx
 $ oc get pod
 NAME                                             READY   STATUS        RESTARTS   AGE
