@@ -23,4 +23,5 @@ jobs:
           python3 -m pip install ansible ansible-runner ansible-runner-http ansible-lint yamllint molecule molecule-docker openshift 
       - name: Test with molecule
         run: |
+          cd ansible-operator-nginx-simple
           molecule test
