@@ -13,6 +13,7 @@ https://access.redhat.com/documentation/ja-jp/openshift_container_platform/4.4/h
 
 # 使用方法
 ```
+# operatorデプロイ
 $ git clone https://github.com/senyoltw/ansible-operator-nginx-simple
 $ cd ansible-operator-nginx-simple
 
@@ -27,6 +28,7 @@ $ oc get pod
 NAME                                             READY   STATUS    RESTARTS   AGE
 ansible-operator-nginx-simple-7b7575cb5f-7vd77   1/1     Running   0          74s
 
+# nginxをoperator経由でデプロイ
 $ oc apply -f deploy/crds/webserver.example.com_v1alpha1_nginx_cr.yaml 
 $ oc get pod
 NAME                                             READY   STATUS    RESTARTS   AGE
