@@ -33,3 +33,7 @@
     - name: Example assertion
       assert:
         that: (pods | length) > 0
+
+    - name: debug pods
+      debug:
+        msg: "{{ pods }}"
