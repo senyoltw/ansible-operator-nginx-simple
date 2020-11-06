@@ -20,7 +20,7 @@ jobs:
         run: |
           sudo apt install docker
           python3 -m pip install --upgrade pip
-          python3 -m pip install ansible ansible-runner ansible-runner-http ansible-lint yamllint molecul molecule-docker openshif 
+          python3 -m pip install ansible ansible-runner ansible-runner-http ansible-lint yamllint molecule molecule-docker openshif 
       - name: Test with molecule
         run: |
           molecule test
