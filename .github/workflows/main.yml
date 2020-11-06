@@ -29,4 +29,4 @@ jobs:
       - name: Test with molecule
         run: |
           cd ansible-operator-nginx-simple
-          molecule test
+          molecule test -s test-local
