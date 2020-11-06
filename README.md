@@ -1,3 +1,5 @@
+![Molecule Test](https://github.com/senyoltw/ansible-operator-nginx-simple/workflows/Molecule%20Test/badge.svg)
+
 # ansible-operator-nginx-simple
 operator-sdkによるansible operatorのサンプル実装。できるだけシンプルに。
 
@@ -6,7 +8,7 @@ operator-sdkによるansible operatorのサンプル実装。できるだけシ�
 - operator-sdk 0.19.4
 
 # よさげなドキュメント
-https://v0-19-x.sdk.operatorframework.io/docs/
+https://v0-19-x.sdk.operatorframework.io/docs/  
 https://access.redhat.com/documentation/ja-jp/openshift_container_platform/4.4/html/operators/index
 
 # 使用方法
