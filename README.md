@@ -26,23 +26,23 @@ $ oc apply -f deploy/operator.yaml
 
 $ oc get pod
 NAME                                             READY   STATUS    RESTARTS   AGE
-ansible-operator-nginx-simple-7b7575cb5f-7vd77   1/1     Running   0          74s
+ansible-operator-nginx-simple-859dc55dd8-hq244   1/1     Running   0          59s
 
 # nginxをoperator経由でデプロイ
 $ oc apply -f deploy/crds/webserver.example.com_v1alpha1_nginx_cr.yaml 
 $ oc get pod
 NAME                                             READY   STATUS    RESTARTS   AGE
-ansible-operator-nginx-simple-7b7575cb5f-7vd77   1/1     Running   0          76s
-example-nginx-nginx-59dcc47779-cnzh2             1/1     Running   0          8s
-example-nginx-nginx-59dcc47779-mtdrv             1/1     Running   0          8s
-example-nginx-nginx-59dcc47779-pdpn6             1/1     Running   0          8s
+ansible-operator-nginx-simple-859dc55dd8-hq244   1/1     Running   0          80s
+example-nginx-nginx-1.19.2-6686d8f89f-595km      1/1     Running   0          20s
+example-nginx-nginx-1.19.2-6686d8f89f-9rd8k      1/1     Running   0          20s
+example-nginx-nginx-1.19.2-6686d8f89f-wtwbz      1/1     Running   0          20s
 $ oc delete Nginx example-nginx
 $ oc get pod
 NAME                                             READY   STATUS        RESTARTS   AGE
-ansible-operator-nginx-simple-7b7575cb5f-7vd77   1/1     Running       0          84s
-example-nginx-nginx-59dcc47779-cnzh2             0/1     Terminating   0          16s
-example-nginx-nginx-59dcc47779-mtdrv             0/1     Terminating   0          16s
-example-nginx-nginx-59dcc47779-pdpn6             0/1     Terminating   0          16s
+ansible-operator-nginx-simple-859dc55dd8-hq244   1/1     Running       0          2m19s
+example-nginx-nginx-1.19.2-6686d8f89f-595km      0/1     Terminating   0          79s
+example-nginx-nginx-1.19.2-6686d8f89f-9rd8k      0/1     Terminating   0          79s
+example-nginx-nginx-1.19.2-6686d8f89f-wtwbz      0/1     Terminating   0          79s
 
 # Cleanup
 $ oc delete -f deploy/crds/webserver.example.com_v1alpha1_nginx_cr.yaml 
