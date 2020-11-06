@@ -3,6 +3,12 @@
 # ansible-operator-nginx-simple
 operator-sdkによるansible operatorのサンプル実装。できるだけシンプルに。
 
+# operator動作内容
+- nginx podのServiceを設定
+- nginxinc/nginx-unprivileged をデプロイ
+  - size の数だけpodを起動
+  - image_version でコンテナのバージョン指定
+
 # 作成・動作・テスト環境  
 - 作成・動作
   - OpenShift/oc 4.4.17
