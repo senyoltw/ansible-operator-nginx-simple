@@ -18,7 +18,7 @@
 
     - name: Wait for the Kubernetes API to become available (this could take a minute)
       uri:
-        url: "http://kubernetes-ready:10080/kubernetes-ready"
+        url: "http://bsycorp-kind:10080/kubernetes-ready"
         status_code: 200
         validate_certs: no
       register: result
